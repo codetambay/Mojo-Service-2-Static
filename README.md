@@ -1,5 +1,5 @@
-# mojoservices-static
+# Updated from Bootstrap 3 to Bootstrap 4
 
-DEMO Site ->  [mojo-services](https://thegoodartisan.com/demo/mojo-services/home/)
+DEMO Site ->  [mojo-services](https://codetambay.com/)
 
-HTML, CSS, JavaScript, Isotope, Flexslider, and Bootstrap
+HTML, CSS, JavaScript, Isotope, Flexslider, and Bootstrap 4
