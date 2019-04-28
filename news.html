@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mojo Service | Demo and Dummy Only</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/flexslider.css" />
+    <link rel="stylesheet" href="css/bootstrap-4.3/bootstrap.css" />
+    <link rel="stylesheet" href="genericons/genericons.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <!-- Adds HTML5 element support for earlier versions of IE -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/fav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/fav/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/fav/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/fav/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/fav/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/fav/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/fav/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/fav/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/fav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png">
+    <link rel="manifest" href="images/fav/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/fav/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicon end -->
+
+  </head>
+<body>
+
+    <header>
+        <div class="top-bar-line"></div>      
+            <div class="container p-x-offset-15">
+              <section class="d-block d-md-none">
+                  <div class="top-bar-mobile">
+  
+                    <div class="mobile-navigation-wrapper">
+                      <ul>
+                          <li>
+                              <a href="/" title="Home">
+                                <span class="glyphicon glyphicon-home" aria-hidden="true"></span> 
+                                Home
+                              </a>
+                          </li> 
+                          <li>
+                              <a href="gallery.html" title="Gallery">
+                                <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+                                Gallery
+                              </a>
+                          </li>
+                          <li>                          
+                              <a href="tel:1234567890">
+                                <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> 
+                                1234567890
+                              </a>
+                          </li>
+                      </ul>
+                    </div><!-- .mobile-navigation-wrapper -->
+  
+  
+                    <div class="toggle-wrapper navbar-expand-md navbar-light clearfix">
+                      <button type="button" 
+                        class="navbar-toggler float-right mobile-toggle" 
+                        data-toggle="collapse" 
+                        data-target="#collapse" 
+                        aria-expanded="false">
+                        <span class="glyphicon glyphicon-menu-hamburger white-color font-size-24" aria-hidden="true"></span>                    
+                      </button>    
+                          <!--    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php //esc_html_e( 'Primary Menu', 'mojoservices' ); ?></button>    -->           
+                    </div><!-- .toggle-wrapper -->                    
+  
+  
+  
+                  </div><!--  .top-bar-mobile-->
+              </section><!-- visible-xs -->
+  
+              <section class="nav-header row mx-0">
+                <div class="logo-wrapper col-xs-12 col-sm-6 col-md-6 align-self-center">
+                    <h1 class="mb-0 my-3 mx-auto">
+                        <a href="/" class="navbar-brand mr-0" title="Site logo">
+                            <img src="images/logo.png" alt="Mojo Services" class="img-fluid">
+                        </a>
+                    </h1>
+                </div><!-- .logo-wrapper -->
+  
+                <div class="social-media-wrapper col-xs-12 col-sm-6 col-md-6 align-self-center">
+                    <nav class="social-navigation">
+                      <div class="menu-social-link-container">
+                          <ul id="menu-social-link" class="list-unstyled">
+                            <li>
+                              <a href="https://instagram.com/codetambay" target="_blank">
+                                <span class="screen-reader-text">instagram codetambay</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="https://ww.facebook.com/codetambay" target="_blank">
+                                <span class="screen-reader-text">facebook codetambay</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="https://www.youtube.com/channel/UCvepWTD937toQMdSguTsIUg" target="_blank">
+                                <span class="screen-reader-text">youtube codetambay channel</span>
+                              </a>
+                            </li>
+                              <li>
+                              <a href="http://github.com/codetambay" target="_blank">
+                                <span class="screen-reader-text">github codetambay repo</span>
+                              </a>
+                            </li> 
+                          </ul>
+                      </div><!-- .menu-social-link-container -->
+                    </nav>
+                    <div class="clearfix"></div>   
+                </div><!-- .social-media-wrapper -->
+              </section>
+              
+              <nav class="navbar navbar-expand-md bg-light page-navigation">
+                <div class="navigation main-menu collapse navbar-collapse d-md-flex justify-content-md-center" id="collapse" role="navigation">
+                  <ul class="full-width text-center">
+                      <li><a href="/" title="Home">Home</a></li> 
+                      <li><a class="nav-link" href="about.html" title="About">About</a></li>
+                      <li><a class="nav-link" href="gallery.html" title="Gallery">Gallery</a></li>
+                      <li class="active"><a class="nav-link" href="news.html" title="News">News</a></li>
+                      <li><a class="nav-link" href="contact.html" title="Contact">Contact</a></li>
+                  </ul>
+                </div><!-- #collapse -->
+              </nav>
+            </div><!-- #container -->               
+      </header><!-- page header -->
+
+<main id="main">
+ 
+
+  <div class="container">
+
+    <section class="blog">
+
+      
+      <div class="blog-article">
+
+       <article class="blog-post text-center">
+          <header>
+            <img class="img-fluid center-block" src="images/post-featured-01.jpg" alt="Alt Image">
+
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+            <div class="meta">
+              <div class="date">Posted on <span>July 8, 2017</span></div>
+              <div class="author">By <a href="">admin</a></div>
+              <div class="post-comment"><a href="">Leave a comment</a></div>
+            </div>
+          </header>          
+          <p class="blog-content">Ut sodales lacinia lectus, in fermentum ex hendrerit sed. Cras mollis ullamcorper tortor vitae malesuada. Integer commodo risus arcu. Proin felis dolor, iaculis in sem tempor, facilisis iaculis urna. Pellentesque sed fermentum nibh. Vestibulum tempus ipsum in pretium porttitor. Nullam pellentesque, mauris at consectetur dictum, leo erat vehicula risus, fermentum rutrum est tortor faucibus urna. Mauris sapien felis, vulputate varius dignissim eget, aliquet quis magna. Suspendisse commodo lacus nec lectus tempor, a congue ligula imperdiet. Etiam non dignissim leo. Suspendisse faucibus turpis nibh, non blandit lorem tempus tempus.</p>
+          <a class="btn cta-more btn-bg-blue white-color" href="">Read more</a>        
+       </article>   
+       <article class="blog-post text-center">
+          <header>
+            <img class="img-fluid center-block" src="images/post-featured-02.jpg" alt="Alt Image">
+
+            <h2>Ut sodales lacinia lectus, in fermentum ex hendrerit sed.</h2>
+            <div class="meta">
+              <div class="date">Posted on <span>July 30, 2017</span></div>
+              <div class="author">By <a href="">admin</a></div>
+              <div class="post-comment"><a href="">Leave a comment</a></div>
+            </div>
+          </header>          
+          <p class="blog-content">Ut sodales lacinia lectus, in fermentum ex hendrerit sed. Cras mollis ullamcorper tortor vitae malesuada. Integer commodo risus arcu. Proin felis dolor, iaculis in sem tempor, facilisis iaculis urna. Pellentesque sed fermentum nibh. Vestibulum tempus ipsum in pretium porttitor. Nullam pellentesque, mauris at consectetur dictum, leo erat vehicula risus, fermentum rutrum est tortor faucibus urna. Mauris sapien felis, vulputate varius dignissim eget, aliquet quis magna. Suspendisse commodo lacus nec lectus tempor, a congue ligula imperdiet. Etiam non dignissim leo. Suspendisse faucibus turpis nibh, non blandit lorem tempus tempus.</p>
+          <a class="btn cta-more btn-bg-blue white-color" href="">Read more</a>        
+       </article> 
+       <article class="blog-post text-center">
+          <header>
+            <img class="img-fluid center-block" src="images/post-featured-03.jpg" alt="alt Image">
+
+            <h2>Ut sodales lacinia lectus, in fermentum ex hendrerit sed.</h2>
+            <div class="meta">
+              <div class="date">Posted on <span>July 30, 2017</span></div>
+              <div class="author">By <a href="">admin</a></div>
+              <div class="post-comment"><a href="">Leave a comment</a></div>
+            </div>
+          </header>          
+          <p class="blog-content">Suspendisse commodo lacus nec lectus tempor, a congue ligula imperdiet. Etiam non dignissim leo. Suspendisse faucibus turpis nibh, non blandit lorem tempus tempus. Ut sodales lacinia lectus, in fermentum ex hendrerit sed. Cras mollis ullamcorper tortor vitae malesuada. Integer commodo risus arcu. Proin felis dolor, iaculis in sem tempor, facilisis iaculis urna. Pellentesque sed fermentum nibh. Vestibulum tempus ipsum in pretium porttitor. Nullam pellentesque, mauris at consectetur dictum, leo erat vehicula risus, fermentum rutrum est tortor faucibus urna. Mauris sapien felis, vulputate varius dignissim eget, aliquet quis magna. Suspendisse commodo lacus nec lectus tempor, a congue ligula imperdiet. Etiam non dignissim leo. Suspendisse faucibus turpis nibh, non blandit lorem tempus tempus.</p>
+          <a class="btn cta-more btn-bg-blue white-color" href="">Read more</a>        
+       </article> 
+          
+      </div><!-- .blog-article -->
+
+    </section> <!-- .blog -->
+
+
+
+
+  </div><!-- .container -->  
+</main>
+<aside id="secondary" class="widget-wrapper">
+  <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+              <h4 class="white-color">Menu Links</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="white-color">Home</a></li>
+                <li><a href="#" class="white-color">About</a></li>
+                <li><a href="#" class="white-color">Gallery</a></li>
+                <li><a href="#" class="white-color">Contact</a></li>
+              </ul>              
+            </div><!-- .col -->
+
+            <div class="col-md-4 white-color">
+                <p>Checkout our social media account! mauris at consectetur dictum, leo erat vehicula risus, fermentum rutrum est tortor faucibus urna.</p>
+                <ul class="list-unstyled social-list social-navigation">
+                    <li>
+                        <a href="http://instagram.com/codetambay" target="_blank">
+                        <span class="screen-reader-text">instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/codetambay" target="_blank">
+                        <span class="screen-reader-text">facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCvepWTD937toQMdSguTsIUg" target="_blank">
+                        <span class="screen-reader-text">youtube</span>
+                        </a>
+                    </li>
+                        <li>
+                        <a href="https://github.com/codetambay" target="_blank">
+                        <span class="screen-reader-text">github</span>
+                        </a>
+                    </li>
+                </ul>
+            </div><!-- .col -->
+
+          <div class="col-md-4">
+            <h4 class="white-color">Subscribe Our Newsletter</h4>
+            <p><small class="white-color">No spam period.</small></p>
+            <form action="" method="post">
+
+              <div class="input-group">
+                  <input type="email" class="btn btn-lg full-width my-input-focus" name="email" id="email" type="email" placeholder="Your Email" required>
+                  <button class="btn my-btn-white btn-lg full-width" type="submit">Sign up</button>
+              </div>
+
+
+            </form>
+          </div><!-- .col -->
+        </div><!-- row -->
+  </div><!-- .container -->
+</aside>
+<footer>
+    <section id="page-footer" class="container text-center">
+            <p>&copy; 2019 <a href="http://codetambay.com" title="Web Design and Development">Code Tambay</a></p>         
+    </section>
+</footer><!-- page footer -->
+
+  <!-- JavaScript -->
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
+  <script src="js/bootstrap-4.3/bootstrap.js"></script>
+  <script src="js/jquery.fancybox.pack.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
+  <script src="js/custom.js"></script>
+
+</body>
+</html>
