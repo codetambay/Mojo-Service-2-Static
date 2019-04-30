@@ -1,8 +1,7 @@
-
 /*
 Design Name: Mojo Services 
 Site URI: CodeTambay.com
-Repo: 
+Repo: https://github.com/codetambay/Mojo-Service-2-Static
 Author: aljun
 Description: Mojo Service Demo Web HTML, CSS, JavaScript. Static Website for Video Series Demo of CodeTambay Web Videos.
 Year Create: 2019
@@ -18,43 +17,43 @@ jQuery(document).ready(function($) {
     //Bootstrap Carousel Init
     $('.carousel').carousel();
 
-/*
-|--------------------------------------------------------------------------
-| Global myTheme Obj / Variable Declaration
-|--------------------------------------------------------------------------
-|
-|
-|
-*/
+    /*
+    |--------------------------------------------------------------------------
+    | Global myTheme Obj / Variable Declaration
+    |--------------------------------------------------------------------------
+    |
+    |
+    |
+    */
 
     var myTheme = window.myTheme || {},
-    $win = $( window );
-    
-/*
-|--------------------------------------------------------------------------
-| Fancybox
-|--------------------------------------------------------------------------
-|
-|
-|
-*/      
+        $win = $(window);
 
-    myTheme.Fancybox = function () {
-        
+    /*
+    |--------------------------------------------------------------------------
+    | Fancybox
+    |--------------------------------------------------------------------------
+    |
+    |
+    |
+    */
+
+    myTheme.Fancybox = function() {
+
         $(".fancybox-pop").fancybox({
-            maxWidth    : 900,
-            maxHeight   : 700,
-            fitToView   : true,
-            width       : '80%',
-            height      : '80%',
-            autoSize    : false,
-            closeClick  : false,
-            openEffect  : 'elastic',
-            closeEffect : 'elastic'
+            maxWidth: 900,
+            maxHeight: 700,
+            fitToView: true,
+            width: '80%',
+            height: '80%',
+            autoSize: false,
+            closeClick: false,
+            openEffect: 'elastic',
+            closeEffect: 'elastic'
         });
-    
+
     };
-  
+
 
 
     /*
@@ -75,17 +74,17 @@ jQuery(document).ready(function($) {
     |
     |
     |
-    */      
-    //Run this in Gallery Page Only | gallery.html
-    if ($(".isotopeContainer")[0]){
-        console.log("Run this in Gallery Page Only!");
+    */
+    //Runs only if there is an "isotopeContainer" class | gallery.html
+    if ($(".isotopeContainer")[0]) {
+        console.log("Hey! This is me Gallery.html!");
         $('.isotopeContainer').isotope({
             // options
             itemSelector: '.isotopeSelector',
             layoutMode: 'fitRows',
             // slow transitions
             transitionDuration: '0.8s',
-        });   
+        });
     }
 
 
