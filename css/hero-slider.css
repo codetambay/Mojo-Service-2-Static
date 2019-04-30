@@ -1,0 +1,94 @@
+/*
+Design Name: Mojo Services 
+Site URI: CodeTambay.com
+Repo: https://github.com/codetambay/Mojo-Service-2-Static
+Author: aljun
+Description: Mojo Service Demo Web HTML, CSS, JavaScript. Static Website for Video Series Demo of CodeTambay Web Videos.
+Year Create: 2019
+Version: 1.0.1
+*/
+
+
+/* # main - flexslider 
+--------------------------------------------- */
+
+main section .flexslider {
+    border: none;
+}
+
+main section .flexslider .flex-next,
+main section .flexslider .flex-prev {
+    line-height: 1;
+}
+
+main section .flexslider .flex-control-nav {
+    top: 0;
+    bottom: initial;
+    text-align: left;
+    z-index: 33;
+    padding-top: .8em;
+    padding-left: .5em;
+}
+
+main section .flexslider .flex-control-paging li a.flex-active {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+main section .flexslider .flex-control-paging li a {
+    background: rgba(255, 255, 255, 0.3);
+    width: 22px;
+    height: 22px;
+    box-shadow: none;
+}
+
+main section .flexslider .slides .about-ac {
+    background-color: rgb(40, 151, 254);
+    height: auto;
+}
+
+main section .flexslider .slides .about-ac>h3 {
+    color: #FFF;
+    padding: .4em;
+    margin-top: 0;
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 48.000em) {
+    /*48.000em = 768px | 16px */
+    main section .flexslider .slides .about-ac {
+        background-color: rgba(40, 151, 254, 0.53);
+        bottom: 1em;
+        right: 0;
+        position: absolute;
+        width: 60%;
+        padding: 1em;
+        border-radius: 20px 0 0 0;
+    }
+    main section .flexslider .slides .about-ac>h3 {
+        font-size: 1.213em;
+        font-weight: bold;
+        color: #fff;
+        margin: 0;
+        letter-spacing: 0;
+        font-weight: normal;
+        position: static;
+        top: auto;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 62.000em) {
+    /*62.000em = 992px | 16px */
+    main section .flexslider .slides .about-ac {
+        width: 60%;
+    }
+    main section .flexslider .slides .about-ac>h3 {
+        font-family: 'Arima Madurai', cursive;
+        font-size: 29px;
+        line-height: 31px;
+    }
+}

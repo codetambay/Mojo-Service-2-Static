@@ -1,194 +1,157 @@
 /*
 Design Name: Mojo Services 
 Site URI: CodeTambay.com
-Repo: 
+Repo: https://github.com/codetambay/Mojo-Service-2-Static
 Author: aljun
 Description: Mojo Service Demo Web HTML, CSS, JavaScript. Static Website for Video Series Demo of CodeTambay Web Videos.
 Year Create: 2019
 Version: 1.0.1
 */
-.gallery-display {
-    padding-bottom:40px;
-}
-/* category filter */
 
-ul.filter > li span {
-    color:#ddd;
-    font-size:20px;
-    display:inline-block;
-    margin:0 5px
-}
-.gallery-display .filter-container .filter > li {
-    padding:0;
-    margin:0
-}
-.gallery-display h1 {
-    text-align:center
+.gallery-grid-wrapper {
+    /* main wrapper for itemSelector */
+    padding-bottom: 40px;
 }
 
-/* images */
-figure {
-    float:left;
-    width:100%;
-    position:relative
-}
-figure img {
-    width:100%;
-    height:auto
+
+/* overlay opac green bg */
+
+.gallery-grid-wrapper figure .overlay-background .inner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: 11px;
+    background-color: rgb(78, 174, 0);
 }
 
-/* image title */
-.gallery-display .article-title {
-    text-align:center;
-    float:left;
-    width:100%;
-    font-size:18px;
-    line-height:24px;
-    padding:10px 0 30px 0;
-}
-.gallery-display figure .overlay-background .inner {
-    position:absolute;
-    left:0;
-    right:0;
-    bottom:0;
-    top:0;
-    margin:11px;
-    background-color:#c8e9c8;
-    background-color:rgba(194,231,194,0.9)
-}
-.gallery-display figure .overlay {
-    z-index:2;
-    transition:all .2s ease-in-out;
-    position:absolute;
-    top:0;
-    left:0;
-    opacity:0;
-    visibility:hidden;
-    width:100%;
-    height:100%
-}
-.gallery-display figure .inner-overlay {
-    display:table;
-    width:100%;
-    height:100%
-}
-.gallery-display figure .inner-overlay-content {
-    display:table-cell;
-    vertical-align:middle;
-    width:100%;
-    padding:20px 40px
-}
-.gallery-display figure .inner-overlay-content.with-icons {
-    text-align:center
+
+/* overlay search and link icons */
+
+.gallery-grid-wrapper figure .overlay {
+    z-index: 2;
+    transition: all .2s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%
 }
 
-/* skew image on hover */ 
+
+/* horizontal center align of search and link icons  */
+
+.gallery-grid-wrapper figure .inner-overlay {
+    display: table;
+    width: 100%;
+    height: 100%
+}
+
+
+/* vertical center align of search and link icons  */
+
+.gallery-grid-wrapper figure .inner-overlay-content {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    padding: 20px 40px;
+    /* center align */
+    text-align: center;
+}
+
+
+/* transparent overlay bg when <figure> elem hover */
+
+.gallery-grid-wrapper figure:hover .overlay-background {
+    opacity: .8;
+    visibility: visible
+}
+
+
+/* transparent overlay bg */
+
+.gallery-grid-wrapper figure .overlay-background {
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+/* overlay div elem of search and link icons  */
+
+.gallery-grid-wrapper figure:hover .overlay {
+    opacity: 1;
+    visibility: visible
+}
+
+
+/* search and link icons width, height, spacing, border, and color */
+
+.gallery-grid-wrapper figure .inner-overlay-content a {
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    background: #00c0ff;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+/* skew image when hover */
+
 .isotopeSelector img {
-    -webkit-transition:all .4s ease;
-    -moz-transition:all .4s ease;
-    -ms-transition:all .4s ease;
-    -o-transition:all .4s ease;
-    transition:all .4s ease
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+    transition: all .8s ease;
 }
+
 .isotopeSelector:hover img {
-    -moz-transform:scale(1.5) rotate(2deg);
-    -webkit-transform:scale(1.5) rotate(2deg);
-    -o-transform:scale(1.5) rotate(2deg);
-    -ms-transform:scale(1.5) rotate(2deg);
-    transform:scale(1.5) rotate(2deg);
-    -webkit-transition:all .8s ease;
-    -moz-transition:all .8s ease;
-    -ms-transition:all .8s ease;
-    -o-transition:all .8s ease;
-    transition:all .8s ease
+    -moz-transform: scale(1.5) rotate(8deg);
+    -webkit-transform: scale(1.5) rotate(8deg);
+    -o-transform: scale(1.5) rotate(8deg);
+    -ms-transform: scale(1.5) rotate(8deg);
+    transform: scale(1.5) rotate(8deg);
 }
+
+
+/* cut-out the overflow figure elem */
+
 .isotopeSelector figure {
-    overflow:hidden;
-    box-shadow:0 0 2px rgba(0,0,0,0.2)
-}
-ul.filter > li > a {
-    color:#fff;
-    font-size:.8em;
-    line-height:40px;
-    border: 2px solid #fff;
-    text-decoration: none;
-    background: rgba(0, 0, 0, 0.53);
-    margin-bottom: .5em;
-    text-transform: uppercase;
-    font-weight: 200;
-
-}
-ul.filter > li > a:hover,ul.filter > li > a:focus {
-    text-decoration:none;
-    color:#fff;
-    background: #00c0ff;
-    outline:none
-}
-ul.filter > li.active a {
-    color:#fff;
-    background: #00c0ff;
-}
-.gallery-display.port-col figure .overlay-background {
-    background-color:#000;
-    background-color:rgba(0,0,0,0.4);
-}
-.gallery-display figure {
-    float:left;
-    width:100%;
-    position:relative
-}
-.gallery-display figure img {
-    width:100%;
-    height:auto
-}
-.gallery-display .article-title a {
-    color:#fff;
-    font-size: .7em;
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-.gallery-display .article-title a:hover,
-.gallery-display .article-title a:focus {
-    color:#00c0ff;
-    border-bottom: 1px solid rgba(0, 192, 255, 0.46);
+    overflow: hidden;
 }
 
-/* transparent overlay */
-.gallery-display figure:hover .overlay {
-    opacity:1;
-    visibility:visible
-}
-.gallery-display figure:hover .overlay-background {
-    opacity:.8;
-    visibility:visible
-}
-.gallery-display figure .overlay-background {
-    z-index:1;
-    -webkit-transition:all .2s ease-in-out;
-    -moz-transition:all .2s ease-in-out;
-    -o-transition:all .2s ease-in-out;
-    transition:all .2s ease-in-out;
-    position:absolute;
-    top:0;
-    left:0;
-    opacity:0;
-    visibility:hidden;
-    width:100%;
-    height:100%
+
+/* 
+    <figure> elem set as relative | inside elem like overlay set as absolute 
+    these class "overlay-background", "overlay" set as absolute
+*/
+
+.gallery-grid-wrapper figure {
+    float: left;
+    width: 100%;
+    position: relative
 }
 
-/* icons overlay */
-.gallery-display figure .inner-overlay-content.with-icons a {
-    width:40px;
-    height:40px;
-    line-height:42px;
-    display:inline-block;
-    margin:0 10px;
-    text-decoration:none;
-    font-size:20px;
-    background:#00c0ff;
-    color:#fff;
-    border-radius:0
-}
 
+/* img responsive when small screen */
+
+.gallery-grid-wrapper figure img {
+    width: 100%;
+    height: auto
+}

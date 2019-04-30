@@ -1,0 +1,66 @@
+/*
+Design Name: Mojo Services 
+Site URI: CodeTambay.com
+Repo: https://github.com/codetambay/Mojo-Service-2-Static
+Author: aljun
+Description: Mojo Service Demo Web HTML, CSS, JavaScript. Static Website for Video Series Demo of CodeTambay Web Videos.
+Year Create: 2019
+Version: 1.0.1
+*/
+
+
+/*  #testimonial-carousel */
+
+#testimonial-carousel {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#testimonial-carousel blockquote {
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    border-left: none;
+}
+
+#testimonial-carousel .carousel-indicators {
+    bottom: 0;
+}
+
+#testimonial-carousel .carousel-indicators li {
+    width: 23px;
+    height: 23px;
+    border: 2px solid #cbcbcb;
+}
+
+#testimonial-carousel .carousel-indicators li.active {
+    background-color: #cbcbcb;
+}
+
+.testimonial_body {
+    padding: 20px;
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 48.000em) {
+    /*48.000em = 768px | 16px */
+    .testimonial_body {
+        padding: 20px 180px;
+    }
+}
+
+#testimonial-carousel .carousel-control.left {
+    background-image: none;
+    filter: none;
+    background-repeat: repeat-x;
+}
+
+#testimonial-carousel .carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: none;
+    filter: none;
+    background-repeat: repeat-x;
+}
